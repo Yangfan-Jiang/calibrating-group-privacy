@@ -1,6 +1,6 @@
 This repository provides the Python implementation for VLDB'25 paper [Calibrating Noise for Group Privacy in Subsampled Mechanisms](https://drive.google.com/file/d/1cmJ_vlbWMmFqGeUVdtrBBTe_dayjbol9/view).
 
-# Calibrating Noise for Group Privacy
+# Calibrating Noise for Subsampled Rényi Group Privacy
 
 ## Requirements 
 - torch, torchvision
