@@ -1,4 +1,4 @@
-This repository provides the Python implementation for VLDB'25 paper [Calibrating Noise for Group Privacy in Subsampled Mechanisms](https://drive.google.com/file/d/1cmJ_vlbWMmFqGeUVdtrBBTe_dayjbol9/view).
+This repository provides the Python implementation for the VLDB'25 paper [Calibrating Noise for Group Privacy in Subsampled Mechanisms](https://arxiv.org/abs/2408.09943).
 
 # Calibrating Noise for Subsampled Rényi Group Privacy
 
@@ -48,7 +48,7 @@ epsilon, m, delta: privacy parameters, i.e.,  (m,epsilon,delta)-GP
 t: number of iterations
 err: error tolerance for binary search for calibrating noise std
 """ 
-calibrating_sgm_noise_rdp(q, epsilon, m, delta=1e-5, t=500, err=1e-3)
+calibrating_sgm_noise_ours(q, epsilon, m, delta=1e-5, t=500, err=1e-3)
 ```
 
 Key parameters in ```train_$dataset-name$.ipynb```:
@@ -56,7 +56,7 @@ Key parameters in ```train_$dataset-name$.ipynb```:
 configs = {
     'output_size': 10,        # number of units in output layer
     'data_size': data_size,   # size of training dataset
-    'model': 'scatter',       # model type:
+    'model': 'scatter',       # model type
     'data': d,                # loaded dataset, e.g., d=load_mnist()
     'lr': lr,                 # learning rate
     'E': 500,                 # number of SGD iterations
